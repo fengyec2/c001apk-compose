@@ -1,5 +1,4 @@
- 
-name: Kotlin Android CI
+ name: Kotlin Android CI
 
 # 触发事件
 on:
@@ -39,7 +38,7 @@ jobs:
 
     - name: Decrypt keystore
       run: |
-        echo $KEYSTORE_BASE64 | base64 --decode > android/app/release.keystore
+        echo "$KEYSTORE_BASE64" | base64 --decode > android/app/release.keystore
       env:
         KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
 
