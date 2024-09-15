@@ -1,4 +1,4 @@
-name: Kotlin Android CI
+name: Kotlin Android CI debug
 
 on:
   workflow_dispatch:
